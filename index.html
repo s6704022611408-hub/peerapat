@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peerapat Yimyam - Resume</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f6f8;
+            color: #263238;
+            line-height: 1.7;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #283593, #5c6bc0);
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .profile-header {
+            max-width: 1000px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .profile-photo {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid rgba(255, 255, 255, 0.85);
+            flex-shrink: 0;
+        }
+
+        .profile-info {
+            text-align: left;
+        }
+
+        header h1 {
+            font-size: 34px;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 17px;
+            margin-top: 6px;
+            opacity: 0.95;
+        }
+
+        /* Navigation */
+        nav {
+            background: #1a237e;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #c5cae9;
+        }
+
+        /* Sections */
+        section {
+            max-width: 1000px;
+            margin: 30px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        section h2 {
+            color: #283593;
+            border-left: 5px solid #5c6bc0;
+            padding-left: 12px;
+            margin-bottom: 20px;
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th,
+        td {
+            border: 1px solid #cfd8dc;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background: #e8eaf6;
+            color: #1a237e;
+        }
+
+        tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        /* Links */
+        a {
+            color: #3949ab;
+        }
+
+        /* Footer */
+        footer {
+            background: #1a237e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+
+            .profile-header {
+                gap: 15px;
+            }
+
+            .profile-photo {
+                width: 90px;
+                height: 90px;
+            }
+
+            header h1 {
+                font-size: 22px;
+            }
+
+            header p {
+                font-size: 14px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 7px;
+                font-size: 14px;
+            }
+
+            section {
+                margin: 20px 12px;
+                padding: 20px;
+            }
+
+            table {
+                font-size: 14px;
+            }
+
+            th,
+            td {
+                padding: 9px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="profile-header">
+
+            <img
+                src="BC0EB711-ACBD-46E5-8BD9-945184CE2C5E.png"
+                alt="Peerapat Yimyam"
+                class="profile-photo"
+            >
+
+            <div class="profile-info">
+                <h1>Peerapat Yimyam</h1>
+                <p>Mathematics of Computer Student</p>
+                <p>Faculty of Applied Science | KMUTNB</p>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#interests">Interests</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a Mathematics of Computer student at the Faculty of Applied Science,
+            King Mongkut's University of Technology North Bangkok (KMUTNB).
+            I am interested in computer technology, programming, and developing
+            useful digital solutions.
+        </p>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+        <h2>Education</h2>
+
+        <table>
+            <tr>
+                <th>Education</th>
+                <th>Details</th>
+            </tr>
+
+            <tr>
+                <td>University</td>
+                <td>
+                    King Mongkut's University of Technology North Bangkok (KMUTNB)
+                </td>
+            </tr>
+
+            <tr>
+                <td>Faculty</td>
+                <td>Faculty of Applied Science</td>
+            </tr>
+
+            <tr>
+                <td>Major</td>
+                <td>Mathematics of Computer</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <table>
+            <tr>
+                <th>Skill</th>
+                <th>Details</th>
+            </tr>
+
+            <tr>
+                <td>Programming</td>
+                <td>Java, Python</td>
+            </tr>
+
+            <tr>
+                <td>Web Development</td>
+                <td>HTML, CSS, JavaScript</td>
+            </tr>
+
+            <tr>
+                <td>Database</td>
+                <td>SQL</td>
+            </tr>
+
+            <tr>
+                <td>Problem Solving</td>
+                <td>Algorithm and logical thinking</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>Academic Projects</h2>
+
+        <h3>Life Balance</h3>
+
+        <p>
+            A project concept for managing time and money in daily life.
+            The system focuses on helping users organize schedules,
+            manage expenses, and maintain a better balance between
+            their time and finances.
+        </p>
+    </section>
+
+    <!-- Interests -->
+    <section id="interests">
+        <h2>Interests</h2>
+
+        <p>
+            Computer technology, programming, web development,
+            database systems, and digital applications.
+        </p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Information</h2>
+
+        <table>
+            <tr>
+                <th>Information</th>
+                <th>Details</th>
+            </tr>
+
+            <tr>
+                <td>Student ID</td>
+                <td>6704022611408</td>
+            </tr>
+
+            <tr>
+                <td>Email</td>
+                <td>
+                    <a href="mailto:Peerapat.Yimyam@outlook.co.th">
+                        Peerapat.Yimyam@outlook.co.th
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Phone</td>
+                <td>098-626-5543</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Peerapat Yimyam</p>
+    </footer>
+
+</body>
+</html>
