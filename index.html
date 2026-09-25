@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Peerapat Yimyam - Resume</title>
+
+    <style>
+
+        /* ===== GENERAL ===== */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f7f5f0;
+            color: #172033;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        .resume {
+            width: 90%;
+            max-width: 1050px;
+            margin: 20px auto 50px auto;
+        }
+
+
+        /* ===== HEADER ===== */
+
+        .header {
+            background: #18243f;
+            color: white;
+            padding: 40px 45px;
+            border: 1px solid #0d1730;
+            border-radius: 5px;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .header-text {
+            flex: 1;
+        }
+
+        .name {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 42px;
+            line-height: 1.2;
+            margin: 0 0 10px 0;
+            color: white;
+        }
+
+        .job-title {
+            font-size: 17px;
+            color: #dce5ff;
+            margin-bottom: 16px;
+        }
+
+        .contact {
+            font-size: 14px;
+            line-height: 1.9;
+        }
+
+        .contact a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        .profile-photo {
+            width: 125px;
+            height: 125px;
+            object-fit: cover;
+            border: 1px solid #aab4ca;
+            border-radius: 4px;
+            flex-shrink: 0;
+        }
+
+
+        /* ===== SECTION ===== */
+
+        .section {
+            margin-top: 32px;
+        }
+
+        .section-title {
+            color: #9a6508;
+            font-family: "Courier New", monospace;
+            font-size: 13px;
+            letter-spacing: 2px;
+            border-bottom: 1px solid #d8d1c4;
+            padding-bottom: 8px;
+            margin-bottom: 16px;
+        }
+
+
+        /* ===== ABOUT ===== */
+
+        .about p {
+            margin: 0 0 10px 0;
+        }
+
+
+        /* ===== EDUCATION ===== */
+
+        .education-name {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+
+        .education-date {
+            color: #24427d;
+            font-family: "Courier New", monospace;
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+
+
+        /* ===== PROJECT ===== */
+
+        .project {
+            margin-bottom: 25px;
+        }
+
+        .project:last-child {
+            margin-bottom: 0;
+        }
+
+        .project-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 20px;
+        }
+
+        .project-name {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 19px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .project-year {
+            color: #24427d;
+            font-family: "Courier New", monospace;
+            font-size: 12px;
+            white-space: nowrap;
+        }
+
+        .project ul {
+            margin-top: 7px;
+            margin-bottom: 0;
+            padding-left: 22px;
+        }
+
+        .project li {
+            margin-bottom: 4px;
+        }
+
+
+        /* ===== SKILLS ===== */
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .skill-category h3 {
+            color: #0d2d68;
+            font-size: 14px;
+            margin: 0 0 9px 0;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .skill {
+            display: inline-block;
+            padding: 3px 9px;
+            background: #fffdfa;
+            border: 1px solid #d0d4da;
+            border-radius: 3px;
+            color: #18243f;
+            font-family: "Courier New", monospace;
+            font-size: 12px;
+        }
+
+
+        /* ===== INTERESTS ===== */
+
+        .interests {
+            color: #374151;
+        }
+
+
+        /* ===== CONTACT SECTION ===== */
+
+        .contact-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .contact-table td {
+            border-bottom: 1px solid #ddd8cf;
+            padding: 8px 5px;
+        }
+
+        .contact-table td:first-child {
+            width: 150px;
+            font-weight: bold;
+        }
+
+        .contact-table a {
+            color: #1d4ed8;
+        }
+
+
+        /* ===== FOOTER ===== */
+
+        footer {
+            text-align: center;
+            color: #777;
+            font-size: 12px;
+            padding: 30px 0;
+        }
+
+
+        /* ===== MOBILE ===== */
+
+        @media (max-width: 700px) {
+
+            .resume {
+                width: 94%;
+                margin-top: 10px;
+            }
+
+            .header {
+                padding: 28px 25px;
+            }
+
+            .header-inner {
+                gap: 18px;
+            }
+
+            .name {
+                font-size: 30px;
+            }
+
+            .job-title {
+                font-size: 14px;
+            }
+
+            .contact {
+                font-size: 12px;
+            }
+
+            .profile-photo {
+                width: 95px;
+                height: 95px;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+                gap: 18px;
+            }
+        }
+
+
+        @media (max-width: 500px) {
+
+            .header-inner {
+                flex-direction: column-reverse;
+                align-items: flex-start;
+            }
+
+            .profile-photo {
+                width: 105px;
+                height: 105px;
+            }
+
+            .project-top {
+                display: block;
+            }
+
+            .project-year {
+                display: block;
+                margin-top: 3px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+<div class="resume">
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="header-inner">
+
+            <div class="header-text">
+
+                <h1 class="name">
+                    Peerapat<br>
+                    Yimyam
+                </h1>
+
+                <div class="job-title">
+                    Mathematics of Computer Student
+                </div>
+
+                <div class="contact">
+
+                    <div>
+                        <a href="mailto:Peerapat.Yimyam@outlook.co.th">
+                            Peerapat.Yimyam@outlook.co.th
+                        </a>
+                    </div>
+
+                    <div>
+                        098-626-5543
+                    </div>
+
+                    <div>
+                        <a href="https://github.com/s6704022611408-hub"
+                           target="_blank">
+                            github.com/s6704022611408-hub
+                        </a>
+                    </div>
+
+                    <div>
+                        Bangkok, Thailand
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <img
+                src="BC0EB711-ACBD-46E5-8BD9-945184CE2C5E.png"
+                alt="Peerapat Yimyam"
+                class="profile-photo"
+            >
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="section about">
+
+        <div class="section-title">
+            ABOUT
+        </div>
+
+        <p>
+            I am a Mathematics of Computer student at King Mongkut's
+            University of Technology North Bangkok. I am interested in
+            programming, web development, database systems, and creative
+            digital projects. I enjoy learning new technologies and
+            applying my knowledge to practical projects.
+        </p>
+
+        <p>
+            I am also interested in creative writing, digital media,
+            problem solving, and developing ideas through technology.
+        </p>
+
+    </section>
+
+
+    <!-- ================= EDUCATION ================= -->
+
+    <section class="section">
+
+        <div class="section-title">
+            EDUCATION
+        </div>
+
+        <div class="education-name">
+            King Mongkut's University of Technology North Bangkok
+            (KMUTNB)
+        </div>
+
+        <div class="education-date">
+            2024 - Present
+        </div>
+
+        <div>
+            Bachelor of Science in Mathematics of Computer · Bangkok, Thailand
+        </div>
+
+        <div>
+            Faculty of Applied Science · Undergraduate Student
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section class="section">
+
+        <div class="section-title">
+            PROJECTS
+        </div>
+
+
+        <div class="project">
+
+            <div class="project-top">
+
+                <h2 class="project-name">
+                    Life Balance
+                </h2>
+
+                <span class="project-year">
+                    2026
+                </span>
+
+            </div>
+
+            <ul>
+
+                <li>
+                    A digital application concept designed to help users
+                    manage their personal schedules and expenses.
+                </li>
+
+                <li>
+                    Daily schedule management and personal budget tracking.
+                </li>
+
+                <li>
+                    Expense monitoring and simple statistics.
+                </li>
+
+                <li>
+                    Gamification features to encourage consistent use.
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="project">
+
+            <div class="project-top">
+
+                <h2 class="project-name">
+                    Personal Resume Website
+                </h2>
+
+                <span class="project-year">
+                    2026
+                </span>
+
+            </div>
+
+            <ul>
+
+                <li>
+                    Designed and developed a personal resume website
+                    using HTML and CSS.
+                </li>
+
+                <li>
+                    Hosted the website using GitHub Pages.
+                </li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+
+    <section class="section">
+
+        <div class="section-title">
+            SKILLS
+        </div>
+
+
+        <div class="skills-grid">
+
+
+            <div class="skill-category">
+
+                <h3>
+                    Programming
+                </h3>
+
+                <div class="skill-list">
+
+                    <span class="skill">Java</span>
+                    <span class="skill">Python</span>
+                    <span class="skill">HTML/CSS</span>
+                    <span class="skill">JavaScript</span>
+                    <span class="skill">SQL</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="skill-category">
+
+                <h3>
+                    Technology
+                </h3>
+
+                <div class="skill-list">
+
+                    <span class="skill">Web Development</span>
+                    <span class="skill">Database</span>
+                    <span class="skill">Git & GitHub</span>
+                    <span class="skill">Microsoft Office</span>
+                    <span class="skill">UI Design</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="skill-category">
+
+                <h3>
+                    Personal Skills
+                </h3>
+
+                <div class="skill-list">
+
+                    <span class="skill">Problem Solving</span>
+                    <span class="skill">Logical Thinking</span>
+                    <span class="skill">Creative Thinking</span>
+                    <span class="skill">Communication</span>
+                    <span class="skill">Teamwork</span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= INTERESTS ================= -->
+
+    <section class="section">
+
+        <div class="section-title">
+            INTERESTS
+        </div>
+
+        <div class="interests">
+
+            Web Development · Programming · Database Systems ·
+            Digital Technology · Creative Writing · Digital Media ·
+            Game &amp; Interactive Media
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="section">
+
+        <div class="section-title">
+            CONTACT
+        </div>
+
+        <table class="contact-table">
+
+            <tr>
+                <td>Student ID</td>
+                <td>6704022611408</td>
+            </tr>
+
+            <tr>
+                <td>Email</td>
+                <td>
+                    <a href="mailto:Peerapat.Yimyam@outlook.co.th">
+                        Peerapat.Yimyam@outlook.co.th
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Phone</td>
+                <td>
+                    098-626-5543
+                </td>
+            </tr>
+
+        </table>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+        © 2026 Peerapat Yimyam · Resume
+    </footer>
+
+
+</div>
+
+</body>
+</html>
