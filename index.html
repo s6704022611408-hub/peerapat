@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Panitpron Mongkonnukul - Resume</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            color: #263238;
+            line-height: 1.7;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #283593, #5c6bc0);
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .profile-header {
+            max-width: 1000px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .profile-photo {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid rgba(255,255,255,0.8);
+            flex-shrink: 0;
+        }
+
+        .profile-info {
+            text-align: left;
+        }
+
+        header h1 {
+            font-size: 34px;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 17px;
+            margin-top: 8px;
+            opacity: 0.95;
+        }
+
+        /* Navigation */
+        nav {
+            background: #1a237e;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        /* Main */
+        main {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section {
+            background: white;
+            margin: 25px 0;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        section h2 {
+            color: #283593;
+            margin-bottom: 15px;
+            border-left: 5px solid #5c6bc0;
+            padding-left: 10px;
+        }
+
+        /* Lists */
+        ul {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #283593;
+            color: white;
+        }
+
+        /* Links */
+        a {
+            color: #3949ab;
+        }
+
+        /* Footer */
+        footer {
+            background: #1a237e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+
+            .profile-header {
+                gap: 15px;
+            }
+
+            .profile-photo {
+                width: 90px;
+                height: 90px;
+            }
+
+            .profile-info h1 {
+                font-size: 21px;
+            }
+
+            .profile-info p {
+                font-size: 14px;
+            }
+
+            header h1 {
+                font-size: 25px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 4px 6px;
+                font-size: 14px;
+            }
+
+            section {
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="profile-header">
+
+            <img
+                src="profile.jpg"
+                alt="Panitpron Mongkonnukul"
+                class="profile-photo"
+            >
+
+            <div class="profile-info">
+                <h1>Panitpron Mongkonnukul</h1>
+                <p>Mathematics of Computer Student</p>
+                <p>Faculty of Applied Science | KMUTNB</p>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#interests">Interests</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+
+    <main>
+
+        <!-- About -->
+        <section id="about">
+            <h2>About Me</h2>
+
+            <p>
+                I am a Mathematics of Computer student at the Faculty of
+                Applied Science, King Mongkut's University of Technology
+                North Bangkok. I am interested in technology, programming,
+                creative work and web development.
+            </p>
+        </section>
+
+
+        <!-- Education -->
+        <section id="education">
+            <h2>Education</h2>
+
+            <table>
+                <tr>
+                    <th>Institution</th>
+                    <th>Program</th>
+                </tr>
+
+                <tr>
+                    <td>
+                        King Mongkut's University of Technology
+                        North Bangkok
+                    </td>
+                    <td>Mathematics of Computer</td>
+                </tr>
+            </table>
+        </section>
+
+
+        <!-- Skills -->
+        <section id="skills">
+            <h2>Skills</h2>
+
+            <ul>
+                <li>Java</li>
+                <li>Python</li>
+                <li>HTML / CSS</li>
+                <li>JavaScript</li>
+                <li>SQL</li>
+                <li>Problem Solving</li>
+            </ul>
+        </section>
+
+
+        <!-- Projects -->
+        <section id="projects">
+            <h2>Academic Projects</h2>
+
+            <h3>Life Balance</h3>
+
+            <p>
+                A project concept designed to help users manage
+                their time and money through a simple dashboard,
+                calendar and budget management system.
+            </p>
+        </section>
+
+
+        <!-- Interests -->
+        <section id="interests">
+            <h2>Interests</h2>
+
+            <ul>
+                <li>Web Development</li>
+                <li>Programming</li>
+                <li>Technology</li>
+                <li>Creative Writing</li>
+            </ul>
+        </section>
+
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Contact</h2>
+
+            <table>
+                <tr>
+                    <th>Information</th>
+                    <th>Details</th>
+                </tr>
+
+                <tr>
+                    <td>Student ID</td>
+                    <td>s6704022610461</td>
+                </tr>
+
+                <tr>
+                    <td>Email</td>
+                    <td>
+                        <a href="mailto:panitpron.mongkonnukul@gmail.com">
+                            panitpron.mongkonnukul@gmail.com
+                        </a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Phone</td>
+                    <td>098-284-8442</td>
+                </tr>
+
+                <tr>
+                    <td>Facebook</td>
+                    <td>Panitpron Mongkonnukul</td>
+                </tr>
+
+                <tr>
+                    <td>Instagram</td>
+                    <td>pppprr._</td>
+                </tr>
+
+                <tr>
+                    <td>LINE</td>
+                    <td>wanwan2006</td>
+                </tr>
+            </table>
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Panitpron Mongkonnukul | Resume</p>
+    </footer>
+
+</body>
+</html>
